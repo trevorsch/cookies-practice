@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  p 
+    h1 Hello #{name}
+  
+  form(action='/fake-login', method='post')
+    label(for='user_name') Enter User Name:
+    input(type='text' name='user_name')
+    p
+      div
+      input(type='submit' value='Submit')
+      a(href='/fake-logout')  Logout
